@@ -3,52 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>15-html-prosta-strona</title>
 </head>
 <body>
     <nav class="main-navigation">
         <ul class="menu-list">
-            <li><a href="#about">o mnie</a></li>
-            <li><a href="#skills">umiejętności</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">kontakt</a></li>
+            <li><a href="#about">O Mnie</a></li>
+            <li><a href="#skills-list">Umiejętności</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 
 
-    <section>
+    <section id="about">
         <h1>Jan Nowak</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quam doloribus veniam eius qui, quis in sit eum cum voluptates, sint harum, dignissimos delectus fugit molestiae nihil aut voluptatibus officia.
         </p>
     </section>
 
-    <section>
-        <2h>Umiejętności</2h>
-        <div id="sill"></div>
-        <div id="sill"></div>
-        <div id="sill"></div>
-        <div id="sill"></div>
+    <section id="skills-list">
+        <h2>Umiejętności</h2>
+<!-- (div.skill>h3{Umiejętność $}+p{lorem20})*4 -->
+<div class="skill">
+    <h3>Umiejętność 1</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit perferendis ratione rerum quasi impedit placeat. Quis velit at magni eos!</p>
+</div>
+<div class="skill">
+    <h3>Umiejętność 2</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, delectus placeat blanditiis aspernatur beatae quaerat maxime at odit facere temporibus?</p>
+</div>
+<div class="skill">
+    <h3>Umiejętność 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil saepe tenetur nam iste repellat exercitationem ex odio nemo praesentium.</p>
+</div>
+<div class="skill">
+    <h3>Umiejętność 4</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis facere reiciendis facilis blanditiis cumque iure eaque minima quaerat nisi.</p>
+</div>
     </section>
 
-    <section>
-        <2h>Portfolio</2h>
-        <div id="portfolio-item">portfolio-item</div>
-        <div id="portfolio-item">portfolio-item</div>
-        <div id="portfolio-item">portfolio-item</div>
+    <section id="Portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">portfolio-item</div>
+        <div class="portfolio-item">portfolio-item</div>
+        <div class="portfolio-item">portfolio-item</div>
     </section>
 
-    <section>
-        <2h>Contakt - Mortimer Mort</2h>
+    <section id="contact">
+        <h2>Contakt - Mortimer Mort</h2>
         <p>dane kontaktowe</p>
-
-        - formularz w którym znajdą się pola: imię, temat i wiadomość. Każdy z nich musi być polem wymaganym. Na końcu przycisk "wyślij"
 
         <form>
             <label for="fname">Imię:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br>
+            <input type="text" id="fname" name="fname" value="" required><br>
             <label for="lname">Nazwisko:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
+            <input type="text" id="lname" name="lname" value="" required><br><br>
             <input type="submit" value="Wyślij">
           </form>
     </section>
